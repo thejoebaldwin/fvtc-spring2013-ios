@@ -18,6 +18,7 @@
 		3FB7FFC616AE0E450086B203 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB7FFC516AE0E450086B203 /* Default-568h@2x.png */; };
 		3FB7FFC916AE0E450086B203 /* bookOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB7FFC816AE0E450086B203 /* bookOrderViewController.m */; };
 		3FB7FFCC16AE0E450086B203 /* bookOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB7FFCA16AE0E450086B203 /* bookOrderViewController.xib */; };
+		3FB7FFDF16AE35440086B203 /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB7FFDE16AE35440086B203 /* Book.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		3FB7FFC716AE0E450086B203 /* bookOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bookOrderViewController.h; sourceTree = "<group>"; };
 		3FB7FFC816AE0E450086B203 /* bookOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bookOrderViewController.m; sourceTree = "<group>"; };
 		3FB7FFCB16AE0E450086B203 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/bookOrderViewController.xib; sourceTree = "<group>"; };
+		3FB7FFDE16AE35440086B203 /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		3FB7FFB516AE0E450086B203 /* bookOrder */ = {
 			isa = PBXGroup;
 			children = (
+				3FB7FFDE16AE35440086B203 /* Book.png */,
 				3FB7FFBE16AE0E450086B203 /* bookOrderAppDelegate.h */,
 				3FB7FFBF16AE0E450086B203 /* bookOrderAppDelegate.m */,
 				3FB7FFC716AE0E450086B203 /* bookOrderViewController.h */,
@@ -164,6 +167,7 @@
 				3FB7FFC416AE0E450086B203 /* Default@2x.png in Resources */,
 				3FB7FFC616AE0E450086B203 /* Default-568h@2x.png in Resources */,
 				3FB7FFCC16AE0E450086B203 /* bookOrderViewController.xib in Resources */,
+				3FB7FFDF16AE35440086B203 /* Book.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +297,7 @@
 				3FB7FFD116AE0E450086B203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
