@@ -16,4 +16,7 @@
     
     
 }
+@property (weak, nonatomic) IBOutlet UILabel *helloWorldLabel;
+
+
 @end

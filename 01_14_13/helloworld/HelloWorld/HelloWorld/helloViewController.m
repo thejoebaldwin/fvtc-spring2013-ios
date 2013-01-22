@@ -14,11 +14,19 @@
 
 @implementation helloViewController
 
+@synthesize helloWorldLabel;
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [messageLabel setText:@"Goodbye"];
+    
+    [helloWorldLabel setText:@"TESTING"];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
