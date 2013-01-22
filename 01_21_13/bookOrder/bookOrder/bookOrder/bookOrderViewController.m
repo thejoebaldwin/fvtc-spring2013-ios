@@ -42,29 +42,26 @@
     NSLog(@"physicalSwitchChanged");
     
     if ([physicalSwitch isOn]) {
-        //[digitalSwitch setOn:NO];
-        [digitalSwitch setOn:NO animated:NO];
+        [digitalSwitch setOn:NO animated:YES];
     }
     else {
-        //[digitalSwitch setOn: YES];
         [digitalSwitch setOn:YES animated:YES];
-        
     }
-        
-    
-        
-    
-    
-    
-    
 }
 
 - (IBAction)digitalSwitchChanged:(id)sender {
+    
+    if ([digitalSwitch isOn]) {
+        [physicalSwitch setOn:NO animated:YES];
+    }
+    else {
+        [physicalSwitch setOn:YES animated:YES];
+    }
+    
 }
 
 - (IBAction)quantitySliderChanged:(id)sender {
-    
-   //[quantitySlider value]
+
     float sliderValue = [quantitySlider value];
     int realSliderValue = (int) roundf(sliderValue);
     
