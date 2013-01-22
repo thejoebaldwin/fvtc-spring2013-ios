@@ -68,7 +68,10 @@
     
     NSLog(@"Quantity Slider Value = %f || int value = %i", sliderValue, realSliderValue);
     
+    //create instance of NSString, initialize with format for integer
     NSString *labelString = [[NSString alloc] initWithFormat:@"%i", realSliderValue  ];
+    //same result, simpler:
+    NSString *labelString_alt = [NSString stringWithFormat:@"i", realSliderValue];
     
     [sliderValueLabel setText:labelString];
     
