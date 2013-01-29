@@ -13,5 +13,5 @@
 - (IBAction)submitButtonClick:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *gradeField;
 @property (weak, nonatomic) IBOutlet UILabel *gradeLabel;
-
+- (NSString *) getGradeLetter:(float) score;
 @end
