@@ -17,11 +17,12 @@
 
 @synthesize gradeField, gradeLabel;
 
+
+//fires on "tap" gesture
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    //tell the gradeField textbox to dismiss it's keyboard
     [gradeField resignFirstResponder];
-    
-    
 }
 
 - (void)viewDidLoad
