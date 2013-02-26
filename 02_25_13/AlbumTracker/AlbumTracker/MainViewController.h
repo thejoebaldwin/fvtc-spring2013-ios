@@ -13,6 +13,10 @@
     NSMutableArray *_albumItems;
 }
 
+
+- (IBAction)DeleteButtonClick:(id)sender;
+
+
 - (IBAction)AddButtonClick:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *AlbumPicker;

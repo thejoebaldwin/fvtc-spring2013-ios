@@ -7,12 +7,32 @@
 //
 
 #import "NewAlbumViewController.h"
+#import "AlbumItem.h"
 
 @interface NewAlbumViewController ()
 
 @end
 
 @implementation NewAlbumViewController
+
+@synthesize NameField, ArtistField;
+
+- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [NameField resignFirstResponder];
+    [ArtistField resignFirstResponder];
+}
+
+
+- (void) SetAlbumItems: (NSMutableArray *) items
+{
+    _albumItems = items;
+}
+
+- (NSMutableArray *) AlbumItems
+{
+    return _albumItems;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,6 +56,19 @@
 }
 
 - (IBAction)AddButtonClick:(id)sender {
+    
+    //add to the data source
+    //[_albumItems addObject:[NameField text] ];
+    
+    AlbumItem *tempAlbum = [[AlbumItem alloc] init];
+    [tempAlbum setTitle:[NameField text]];
+    [tempAlbum setArtist:[ArtistField text]];
+    [_albumItems addObject:tempAlbum];
+    
+    
+    [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
+
+    
 }
 
 - (IBAction)CancelButtonClick:(id)sender {

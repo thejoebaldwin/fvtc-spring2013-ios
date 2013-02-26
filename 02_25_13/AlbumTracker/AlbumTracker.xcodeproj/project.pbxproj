@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F40CA8B16DC438E0062E1BE /* AlbumItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F40CA8A16DC438E0062E1BE /* AlbumItem.m */; };
 		3FAB3E6E16DC2C4B00ABE334 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAB3E6D16DC2C4B00ABE334 /* UIKit.framework */; };
 		3FAB3E7016DC2C4B00ABE334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAB3E6F16DC2C4B00ABE334 /* Foundation.framework */; };
 		3FAB3E7216DC2C4B00ABE334 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAB3E7116DC2C4B00ABE334 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F40CA8916DC438E0062E1BE /* AlbumItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumItem.h; sourceTree = "<group>"; };
+		3F40CA8A16DC438E0062E1BE /* AlbumItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumItem.m; sourceTree = "<group>"; };
 		3FAB3E6916DC2C4B00ABE334 /* AlbumTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAB3E6D16DC2C4B00ABE334 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FAB3E6F16DC2C4B00ABE334 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +98,8 @@
 				3FAB3E9516DC302200ABE334 /* NewAlbumViewController.xib */,
 				3FAB3E8E16DC2E0B00ABE334 /* MainViewController.h */,
 				3FAB3E8F16DC2E0B00ABE334 /* MainViewController.m */,
+				3F40CA8916DC438E0062E1BE /* AlbumItem.h */,
+				3F40CA8A16DC438E0062E1BE /* AlbumItem.m */,
 				3FAB3E9016DC2E0B00ABE334 /* MainViewController.xib */,
 				3FAB3E7416DC2C4B00ABE334 /* Supporting Files */,
 			);
@@ -187,6 +192,7 @@
 				3FAB3E7E16DC2C4B00ABE334 /* AlbumTrackerAppDelegate.m in Sources */,
 				3FAB3E9116DC2E0B00ABE334 /* MainViewController.m in Sources */,
 				3FAB3E9616DC302200ABE334 /* NewAlbumViewController.m in Sources */,
+				3F40CA8B16DC438E0062E1BE /* AlbumItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +301,7 @@
 				3FAB3E8916DC2C4B00ABE334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

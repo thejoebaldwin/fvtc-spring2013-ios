@@ -8,12 +8,24 @@
 
 #import "MainViewController.h"
 #import "NewAlbumViewController.h"
+#import "AlbumItem.h"
 
 @interface MainViewController ()
 
 @end
 
 @implementation MainViewController
+
+@synthesize AlbumPicker;
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    //view is visible again
+    NSLog(@"ViewDidAppear %@", _album);
+    [AlbumPicker reloadComponent:0];
+}
+
+
 
 - (NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
@@ -27,7 +39,11 @@
 
 - (NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [_albumItems objectAtIndex:row];
+    //return [_albumItems objectAtIndex:row];
+    
+    AlbumItem *tempAlbum = [_albumItems objectAtIndex:row];
+    return [tempAlbum Title];
+    
 }
 
 
@@ -38,7 +54,7 @@
         // Custom initialization
         NSLog(@"InitWithNibName MainViewController");
         _albumItems = [[NSMutableArray alloc] init];
-        [_albumItems addObject:@"The White Album"];
+        //[_albumItems addObject:@"The White Album"];
     }
     return self;
 }
@@ -47,6 +63,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"ViewDidLoad MainViewController");
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,10 +72,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)DeleteButtonClick:(id)sender {
+    
+    int selectedIndex = [AlbumPicker selectedRowInComponent:0];
+    //check to see if array is empty
+    if ([_albumItems count] > 0)
+    {
+        [_albumItems removeObjectAtIndex:selectedIndex];
+        [AlbumPicker reloadComponent:0];
+    }
+}
+
 - (IBAction)AddButtonClick:(id)sender {
     
     
     NewAlbumViewController *navc = [[NewAlbumViewController alloc] init];
+    [navc SetAlbumItems:_albumItems];
+    
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:navc];
     [self presentViewController:navController animated:YES completion:nil];
