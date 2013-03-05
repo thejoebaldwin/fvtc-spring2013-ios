@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F52A5F616E5672A00A3B707 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F52A5F516E5672A00A3B707 /* UIKit.framework */; };
+		3F52A5F816E5672A00A3B707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F52A5F716E5672A00A3B707 /* Foundation.framework */; };
+		3F52A5FA16E5672A00A3B707 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F52A5F916E5672A00A3B707 /* CoreGraphics.framework */; };
+		3F52A60016E5672A00A3B707 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F52A5FE16E5672A00A3B707 /* InfoPlist.strings */; };
+		3F52A60216E5672A00A3B707 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F52A60116E5672A00A3B707 /* main.m */; };
+		3F52A60616E5672A00A3B707 /* IceCreamAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F52A60516E5672A00A3B707 /* IceCreamAppDelegate.m */; };
+		3F52A60816E5672A00A3B707 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F52A60716E5672A00A3B707 /* Default.png */; };
+		3F52A60A16E5672A00A3B707 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F52A60916E5672A00A3B707 /* Default@2x.png */; };
+		3F52A60C16E5672A00A3B707 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F52A60B16E5672A00A3B707 /* Default-568h@2x.png */; };
+		3F52A61416E567F500A3B707 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F52A61316E567F500A3B707 /* MainViewController.m */; };
+		3F52A61816E56DB300A3B707 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F52A61616E56DB300A3B707 /* DetailViewController.m */; };
+		3F52A61916E56DB300A3B707 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F52A61716E56DB300A3B707 /* DetailViewController.xib */; };
+		3F52A61B16E5761000A3B707 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F52A61A16E5761000A3B707 /* HeaderView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F52A5F116E5672A00A3B707 /* IceCreamShoppe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamShoppe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F52A5F516E5672A00A3B707 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F52A5F716E5672A00A3B707 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F52A5F916E5672A00A3B707 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F52A5FD16E5672A00A3B707 /* IceCreamShoppe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IceCreamShoppe-Info.plist"; sourceTree = "<group>"; };
+		3F52A5FF16E5672A00A3B707 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F52A60116E5672A00A3B707 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F52A60316E5672A00A3B707 /* IceCreamShoppe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IceCreamShoppe-Prefix.pch"; sourceTree = "<group>"; };
+		3F52A60416E5672A00A3B707 /* IceCreamAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IceCreamAppDelegate.h; sourceTree = "<group>"; };
+		3F52A60516E5672A00A3B707 /* IceCreamAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IceCreamAppDelegate.m; sourceTree = "<group>"; };
+		3F52A60716E5672A00A3B707 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3F52A60916E5672A00A3B707 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3F52A60B16E5672A00A3B707 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3F52A61216E567F500A3B707 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3F52A61316E567F500A3B707 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3F52A61516E56DB300A3B707 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3F52A61616E56DB300A3B707 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3F52A61716E56DB300A3B707 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3F52A61A16E5761000A3B707 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F52A5EE16E5672A00A3B707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F52A5F616E5672A00A3B707 /* UIKit.framework in Frameworks */,
+				3F52A5F816E5672A00A3B707 /* Foundation.framework in Frameworks */,
+				3F52A5FA16E5672A00A3B707 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F52A5E616E5672A00A3B707 = {
+			isa = PBXGroup;
+			children = (
+				3F52A5FB16E5672A00A3B707 /* IceCreamShoppe */,
+				3F52A5F416E5672A00A3B707 /* Frameworks */,
+				3F52A5F216E5672A00A3B707 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F52A5F216E5672A00A3B707 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F52A5F116E5672A00A3B707 /* IceCreamShoppe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F52A5F416E5672A00A3B707 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F52A5F516E5672A00A3B707 /* UIKit.framework */,
+				3F52A5F716E5672A00A3B707 /* Foundation.framework */,
+				3F52A5F916E5672A00A3B707 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F52A5FB16E5672A00A3B707 /* IceCreamShoppe */ = {
+			isa = PBXGroup;
+			children = (
+				3F52A60416E5672A00A3B707 /* IceCreamAppDelegate.h */,
+				3F52A60516E5672A00A3B707 /* IceCreamAppDelegate.m */,
+				3F52A61216E567F500A3B707 /* MainViewController.h */,
+				3F52A61316E567F500A3B707 /* MainViewController.m */,
+				3F52A61A16E5761000A3B707 /* HeaderView.xib */,
+				3F52A61516E56DB300A3B707 /* DetailViewController.h */,
+				3F52A61616E56DB300A3B707 /* DetailViewController.m */,
+				3F52A61716E56DB300A3B707 /* DetailViewController.xib */,
+				3F52A5FC16E5672A00A3B707 /* Supporting Files */,
+			);
+			path = IceCreamShoppe;
+			sourceTree = "<group>";
+		};
+		3F52A5FC16E5672A00A3B707 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F52A5FD16E5672A00A3B707 /* IceCreamShoppe-Info.plist */,
+				3F52A5FE16E5672A00A3B707 /* InfoPlist.strings */,
+				3F52A60116E5672A00A3B707 /* main.m */,
+				3F52A60316E5672A00A3B707 /* IceCreamShoppe-Prefix.pch */,
+				3F52A60716E5672A00A3B707 /* Default.png */,
+				3F52A60916E5672A00A3B707 /* Default@2x.png */,
+				3F52A60B16E5672A00A3B707 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F52A5F016E5672A00A3B707 /* IceCreamShoppe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F52A60F16E5672A00A3B707 /* Build configuration list for PBXNativeTarget "IceCreamShoppe" */;
+			buildPhases = (
+				3F52A5ED16E5672A00A3B707 /* Sources */,
+				3F52A5EE16E5672A00A3B707 /* Frameworks */,
+				3F52A5EF16E5672A00A3B707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IceCreamShoppe;
+			productName = IceCreamShoppe;
+			productReference = 3F52A5F116E5672A00A3B707 /* IceCreamShoppe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F52A5E816E5672A00A3B707 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IceCream;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = student;
+			};
+			buildConfigurationList = 3F52A5EB16E5672A00A3B707 /* Build configuration list for PBXProject "IceCreamShoppe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F52A5E616E5672A00A3B707;
+			productRefGroup = 3F52A5F216E5672A00A3B707 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F52A5F016E5672A00A3B707 /* IceCreamShoppe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F52A5EF16E5672A00A3B707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F52A60016E5672A00A3B707 /* InfoPlist.strings in Resources */,
+				3F52A60816E5672A00A3B707 /* Default.png in Resources */,
+				3F52A60A16E5672A00A3B707 /* Default@2x.png in Resources */,
+				3F52A60C16E5672A00A3B707 /* Default-568h@2x.png in Resources */,
+				3F52A61916E56DB300A3B707 /* DetailViewController.xib in Resources */,
+				3F52A61B16E5761000A3B707 /* HeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F52A5ED16E5672A00A3B707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F52A60216E5672A00A3B707 /* main.m in Sources */,
+				3F52A60616E5672A00A3B707 /* IceCreamAppDelegate.m in Sources */,
+				3F52A61416E567F500A3B707 /* MainViewController.m in Sources */,
+				3F52A61816E56DB300A3B707 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F52A5FE16E5672A00A3B707 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F52A5FF16E5672A00A3B707 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F52A60D16E5672A00A3B707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F52A60E16E5672A00A3B707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F52A61016E5672A00A3B707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IceCreamShoppe/IceCreamShoppe-Prefix.pch";
+				INFOPLIST_FILE = "IceCreamShoppe/IceCreamShoppe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F52A61116E5672A00A3B707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IceCreamShoppe/IceCreamShoppe-Prefix.pch";
+				INFOPLIST_FILE = "IceCreamShoppe/IceCreamShoppe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F52A5EB16E5672A00A3B707 /* Build configuration list for PBXProject "IceCreamShoppe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F52A60D16E5672A00A3B707 /* Debug */,
+				3F52A60E16E5672A00A3B707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F52A60F16E5672A00A3B707 /* Build configuration list for PBXNativeTarget "IceCreamShoppe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F52A61016E5672A00A3B707 /* Debug */,
+				3F52A61116E5672A00A3B707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F52A5E816E5672A00A3B707 /* Project object */;
+}
