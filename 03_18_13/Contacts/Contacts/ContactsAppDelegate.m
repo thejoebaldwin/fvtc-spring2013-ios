@@ -7,6 +7,8 @@
 //
 
 #import "ContactsAppDelegate.h"
+#import "MainViewController.h"
+#import "ContactItemStore.h"
 
 @implementation ContactsAppDelegate
 
@@ -14,6 +16,18 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    [[ContactItemStore SharedStore] Load];
+
+    //instantiate the main view controller
+    MainViewController *main = [[MainViewController alloc] init];
+    
+    //instantiate the navigation controller (bar at the top) with main as root view controller
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:main];
+    
+    //set the navigation controller as window root view controller
+    [[self window] setRootViewController:navController];
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -29,6 +43,8 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[ContactItemStore SharedStore] Save];
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -44,6 +60,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        [[ContactItemStore SharedStore] Save];
 }
 
 @end

@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ContactItem : NSObject
+@interface ContactItem : NSObject <NSCoding>
 
 
 @property (nonatomic, retain) NSString *FirstName;
 @property (nonatomic, retain) NSString *LastName;
 
 -(id) initWithFirstName:(NSString *) fName WithLastName:(NSString *) lName;
+
++(ContactItem *) RandomContact;
 
 @end

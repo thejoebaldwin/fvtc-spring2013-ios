@@ -17,6 +17,8 @@
 		3FB3114616F7CF05005F511A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB3114516F7CF05005F511A /* Default@2x.png */; };
 		3FB3114816F7CF06005F511A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB3114716F7CF06005F511A /* Default-568h@2x.png */; };
 		3FB3115016F7CF38005F511A /* ContactItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3114F16F7CF38005F511A /* ContactItem.m */; };
+		3FB3115316F7D37E005F511A /* ContactItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3115216F7D37E005F511A /* ContactItemStore.m */; };
+		3FB3115616F7D81F005F511A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3115516F7D81F005F511A /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		3FB3114716F7CF06005F511A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3FB3114E16F7CF38005F511A /* ContactItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactItem.h; sourceTree = "<group>"; };
 		3FB3114F16F7CF38005F511A /* ContactItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactItem.m; sourceTree = "<group>"; };
+		3FB3115116F7D37E005F511A /* ContactItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactItemStore.h; sourceTree = "<group>"; };
+		3FB3115216F7D37E005F511A /* ContactItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactItemStore.m; sourceTree = "<group>"; };
+		3FB3115416F7D81F005F511A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3FB3115516F7D81F005F511A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,10 @@
 			children = (
 				3FB3114E16F7CF38005F511A /* ContactItem.h */,
 				3FB3114F16F7CF38005F511A /* ContactItem.m */,
+				3FB3115116F7D37E005F511A /* ContactItemStore.h */,
+				3FB3115216F7D37E005F511A /* ContactItemStore.m */,
+				3FB3115416F7D81F005F511A /* MainViewController.h */,
+				3FB3115516F7D81F005F511A /* MainViewController.m */,
 				3FB3113716F7CF05005F511A /* Contacts */,
 				3FB3113016F7CF05005F511A /* Frameworks */,
 				3FB3112E16F7CF05005F511A /* Products */,
@@ -173,6 +183,8 @@
 				3FB3113E16F7CF05005F511A /* main.m in Sources */,
 				3FB3114216F7CF05005F511A /* ContactsAppDelegate.m in Sources */,
 				3FB3115016F7CF38005F511A /* ContactItem.m in Sources */,
+				3FB3115316F7D37E005F511A /* ContactItemStore.m in Sources */,
+				3FB3115616F7D81F005F511A /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
