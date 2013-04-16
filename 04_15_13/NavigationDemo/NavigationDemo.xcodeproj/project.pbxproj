@@ -481,6 +481,7 @@
 				3F5D8665171CC3CA00EE50DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5D8666171CC3CA00EE50DD /* Build configuration list for PBXNativeTarget "NavigationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +490,7 @@
 				3F5D8668171CC3CA00EE50DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
