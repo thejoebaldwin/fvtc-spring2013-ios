@@ -45,7 +45,7 @@
         [don SetColor:[UIColor purpleColor]];
 
         _NinjaTurtles = [[NSArray alloc] initWithObjects:leo, raph, mikey, don, nil];
-
+        NSLog(@"Cowabunga!:%@",_NinjaTurtles);
     }
     return self;
 }
