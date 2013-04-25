@@ -62,6 +62,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    //use the section to determine which section was clicked
+    //  use the row to determine which row was selected within that index
+    //  this example is using that data to output the corresponding data element on the clicked row
+    int row = [indexPath row];
+    int section = [indexPath section];
+    NinjaTurtleItem *tempNinjaTurtle = (NinjaTurtleItem *) [_NinjaTurtles objectAtIndex:section];
+    if (row == 0){
+        NSLog(@"%@:%@", [tempNinjaTurtle Name],[tempNinjaTurtle Skill]);
+    }
+    else if (row == 1) {
+        NSLog(@"%@:%@", [tempNinjaTurtle Name],[tempNinjaTurtle NiceColor]);
+    }
+}
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -81,7 +97,7 @@
     }
     else if (row == 1)
     {
-        //if row is 1 then leave text blank, set background color to color
+        //if row is 1 then leave the label text blank and set background color to color
         [cell setBackgroundColor:[tempNinjaTurtle Color]];
     }
     return cell;

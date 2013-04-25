@@ -19,6 +19,7 @@
 -(NSString *) Name;
 -(void) SetColor:(UIColor *) color;
 -(UIColor *) Color;
+-(NSString *) NiceColor;
 -(void) SetSkill:(NSString *) skill;
 -(NSString *) Skill;
 

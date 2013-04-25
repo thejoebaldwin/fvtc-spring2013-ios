@@ -45,6 +45,7 @@
 		978285D2172971DC009ECDD2 /* WebImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebImageViewController.xib; sourceTree = "<group>"; };
 		978285D5172973A5009ECDD2 /* NinjaTurtleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NinjaTurtleItem.h; sourceTree = "<group>"; };
 		978285D6172973A5009ECDD2 /* NinjaTurtleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NinjaTurtleItem.m; sourceTree = "<group>"; };
+		978285D817298141009ECDD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		978285A21729719C009ECDD2 = {
 			isa = PBXGroup;
 			children = (
+				978285D817298141009ECDD2 /* QuartzCore.framework */,
 				978285AD1729719C009ECDD2 /* Frameworks */,
 				978285D5172973A5009ECDD2 /* NinjaTurtleItem.h */,
 				978285D6172973A5009ECDD2 /* NinjaTurtleItem.m */,

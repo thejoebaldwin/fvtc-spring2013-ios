@@ -40,4 +40,32 @@
     return _Skill;
 }
 
+-(NSString *) NiceColor
+{
+    NSString *niceColor = @"none";
+    if (_Color == [UIColor redColor])
+    {
+        niceColor = @"Red";
+    }
+    else if (_Color == [UIColor purpleColor])
+    {
+        niceColor =  @"Purple";
+    }
+    else if (_Color == [UIColor orangeColor])
+    {
+        niceColor =  @"Orange";
+    }
+    else if (_Color == [UIColor blueColor])
+    {
+        niceColor =  @"Blue";
+    }
+    return niceColor;
+}
+
+-(NSString *) description
+{
+    NSString *description = [NSString stringWithFormat:@"%@ uses %@ and wears a %@ bandanna", _Name, _Skill, [self NiceColor]];
+    return description;
+}
+
 @end
