@@ -110,9 +110,7 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:_ManagedObjectContext];
     [request setEntity:entity];
-    //NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"session" ascending:NO];
-    //NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
-    //[request setSortDescriptors:sortDescriptors];
+
     NSError *error = nil;
     NSMutableArray *mutableFetchResults = [[_ManagedObjectContext executeFetchRequest:request error:&error] mutableCopy];
     if (mutableFetchResults == nil)

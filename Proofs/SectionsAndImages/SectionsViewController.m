@@ -99,6 +99,17 @@
     {
         //if row is 1 then leave the label text blank and set background color to color
         [cell setBackgroundColor:[tempNinjaTurtle Color]];
+
+        //load image from internet
+        NSString *path = @"http://humboldttechgroup.com/images/tmnt.jpg";
+        //create NSURL object from path
+        NSURL *url = [NSURL URLWithString:path];
+        //load image into NSData
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        //create UIImage with data
+        UIImage *image = [[UIImage alloc] initWithData:data];
+        [[cell imageView] setImage:image];
+
     }
     return cell;
 }
