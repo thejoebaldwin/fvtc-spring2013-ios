@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA709A3172F3631001558E1 /* MotionDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA709A1172F3631001558E1 /* MotionDataViewController.m */; };
+		3FA709A4172F3631001558E1 /* MotionDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA709A2172F3631001558E1 /* MotionDataViewController.xib */; };
 		D825AF89172F25EB00857819 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D825AF88172F25EB00857819 /* UIKit.framework */; };
 		D825AF8B172F25EB00857819 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D825AF8A172F25EB00857819 /* Foundation.framework */; };
 		D825AF8D172F25EB00857819 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D825AF8C172F25EB00857819 /* CoreGraphics.framework */; };
@@ -19,12 +21,13 @@
 		D825AFA1172F25EB00857819 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D825AFA0172F25EB00857819 /* Default-568h@2x.png */; };
 		D825AFA4172F25EB00857819 /* MotionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D825AFA2172F25EB00857819 /* MotionData.xcdatamodeld */; };
 		D825AFAC172F263800857819 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = D825AFAB172F263800857819 /* Event.m */; };
-		D825AFB0172F265B00857819 /* MotionDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D825AFAE172F265B00857819 /* MotionDataViewController.m */; };
-		D825AFB1172F265B00857819 /* MotionDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D825AFAF172F265B00857819 /* MotionDataViewController.xib */; };
 		D825AFB3172F26A600857819 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D825AFB2172F26A600857819 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FA709A0172F3631001558E1 /* MotionDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionDataViewController.h; sourceTree = SOURCE_ROOT; };
+		3FA709A1172F3631001558E1 /* MotionDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionDataViewController.m; sourceTree = SOURCE_ROOT; };
+		3FA709A2172F3631001558E1 /* MotionDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MotionDataViewController.xib; sourceTree = SOURCE_ROOT; };
 		D825AF85172F25EB00857819 /* MotionData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D825AF88172F25EB00857819 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D825AF8A172F25EB00857819 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,9 +45,6 @@
 		D825AFA3172F25EB00857819 /* MotionData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MotionData.xcdatamodel; sourceTree = "<group>"; };
 		D825AFAA172F263800857819 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		D825AFAB172F263800857819 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		D825AFAD172F265A00857819 /* MotionDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionDataViewController.h; sourceTree = "<group>"; };
-		D825AFAE172F265B00857819 /* MotionDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionDataViewController.m; sourceTree = "<group>"; };
-		D825AFAF172F265B00857819 /* MotionDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MotionDataViewController.xib; sourceTree = "<group>"; };
 		D825AFB2172F26A600857819 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -97,13 +97,13 @@
 			isa = PBXGroup;
 			children = (
 				D825AF99172F25EB00857819 /* MotionDataAppDelegate.h */,
+				3FA709A0172F3631001558E1 /* MotionDataViewController.h */,
+				3FA709A1172F3631001558E1 /* MotionDataViewController.m */,
+				3FA709A2172F3631001558E1 /* MotionDataViewController.xib */,
 				D825AF9A172F25EB00857819 /* MotionDataAppDelegate.m */,
 				D825AFA2172F25EB00857819 /* MotionData.xcdatamodeld */,
 				D825AFAA172F263800857819 /* Event.h */,
 				D825AFAB172F263800857819 /* Event.m */,
-				D825AFAD172F265A00857819 /* MotionDataViewController.h */,
-				D825AFAE172F265B00857819 /* MotionDataViewController.m */,
-				D825AFAF172F265B00857819 /* MotionDataViewController.xib */,
 				D825AF91172F25EB00857819 /* Supporting Files */,
 			);
 			path = MotionData;
@@ -179,7 +179,7 @@
 				D825AF9D172F25EB00857819 /* Default.png in Resources */,
 				D825AF9F172F25EB00857819 /* Default@2x.png in Resources */,
 				D825AFA1172F25EB00857819 /* Default-568h@2x.png in Resources */,
-				D825AFB1172F265B00857819 /* MotionDataViewController.xib in Resources */,
+				3FA709A4172F3631001558E1 /* MotionDataViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +194,7 @@
 				D825AF9B172F25EB00857819 /* MotionDataAppDelegate.m in Sources */,
 				D825AFA4172F25EB00857819 /* MotionData.xcdatamodeld in Sources */,
 				D825AFAC172F263800857819 /* Event.m in Sources */,
-				D825AFB0172F265B00857819 /* MotionDataViewController.m in Sources */,
+				3FA709A3172F3631001558E1 /* MotionDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +276,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MotionData/MotionData-Prefix.pch";
 				INFOPLIST_FILE = "MotionData/MotionData-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -287,6 +288,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MotionData/MotionData-Prefix.pch";
 				INFOPLIST_FILE = "MotionData/MotionData-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -311,6 +313,7 @@
 				D825AFA9172F25EB00857819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

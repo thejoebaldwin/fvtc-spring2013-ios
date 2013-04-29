@@ -2,11 +2,12 @@
 //  MotionDataViewController.m
 //  MotionData
 //
-//  Created by Joseph on 4/29/13.
+//  Created by student on 4/29/13.
 //  Copyright (c) 2013 Joe Baldwin. All rights reserved.
 //
 
 #import "MotionDataViewController.h"
+#import "Event.h"
 
 @interface MotionDataViewController ()
 
@@ -14,10 +15,12 @@
 
 @implementation MotionDataViewController
 
-
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
+   
+
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
     if (self) {
         _Events = [[NSMutableArray alloc] init];
         
@@ -39,13 +42,16 @@
         
     }
     return self;
+
+
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-       }
+    // Do any additional setup after loading the view from its nib.
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -53,44 +59,30 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    return 0;
+    return  [_Events count];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
 
-    return [_Events count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-      
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:@"UITableViewCell"];
+    Event *event = [_Events objectAtIndex:[indexPath row]];
+    NSString *coords = [[NSString alloc] initWithFormat:@"%@,%@,%@", [event x], [event y], [event z]];
+    [[cell textLabel] setText:coords];
     return cell;
 }
 
-
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void) SetManagedObjectContext:(NSManagedObjectContext *) context
 {
-    
+    _ManagedObjectContext = context;
 }
-
-
-
-
+-(NSManagedObjectContext *) ManagedObjectContext
+{
+    return _ManagedObjectContext;
+}
 
 -(void) ClearEvents
 {
@@ -118,9 +110,9 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:_ManagedObjectContext];
     [request setEntity:entity];
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"session" ascending:NO];
-    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
-    [request setSortDescriptors:sortDescriptors];
+    //NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"session" ascending:NO];
+    //NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    //[request setSortDescriptors:sortDescriptors];
     NSError *error = nil;
     NSMutableArray *mutableFetchResults = [[_ManagedObjectContext executeFetchRequest:request error:&error] mutableCopy];
     if (mutableFetchResults == nil)
@@ -137,7 +129,7 @@
     [event setX:[[NSNumber alloc] initWithFloat:x]];
     [event setY:[[NSNumber alloc] initWithFloat:y]];
     [event setZ:[[NSNumber alloc] initWithFloat:z]];
-     
+    
     NSError *error = nil;
     if (![_ManagedObjectContext save:&error]) {
         //handle the error
@@ -150,4 +142,20 @@
     [self AllEvents];
 }
 
+
+
+
+- (IBAction)AddButtonClick:(id)sender {
+    [self AddEvent];
+    [EventTable reloadData];
+}
+
+- (IBAction)EditButtonClick:(id)sender {
+    
+}
+
+- (IBAction)ClearButtonClick:(id)sender {
+    [self ClearEvents];
+        [EventTable reloadData];
+}
 @end
