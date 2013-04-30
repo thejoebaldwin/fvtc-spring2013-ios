@@ -213,6 +213,16 @@
     [_httpData appendData:data];
 }
 
+
+-(void) animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    //retrieve the parent layer out of the animation value bad
+    CAShapeLayer *c = (CAShapeLayer *) [anim valueForKey:@"layer"];
+    //remove the layer from the parent layer
+    [c removeFromSuperlayer];
+}
+
+
 - (void) postDataWithUrl:(NSString *) urlString withState:(BOOL) isOn withID:(NSString *) light_id;
 {
     _httpData = [[NSMutableData alloc] init];
