@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FA709CA172F3E2E001558E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA709C9172F3E2E001558E1 /* UIKit.framework */; };
+		3FA709CC172F3E2E001558E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA709CB172F3E2E001558E1 /* Foundation.framework */; };
+		3FA709CE172F3E2E001558E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA709CD172F3E2E001558E1 /* CoreGraphics.framework */; };
+		3FA709D4172F3E2E001558E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FA709D2172F3E2E001558E1 /* InfoPlist.strings */; };
+		3FA709D6172F3E2E001558E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA709D5172F3E2E001558E1 /* main.m */; };
+		3FA709DA172F3E2E001558E1 /* SlingShotAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA709D9172F3E2E001558E1 /* SlingShotAppDelegate.m */; };
+		3FA709DC172F3E2E001558E1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FA709DB172F3E2E001558E1 /* Default.png */; };
+		3FA709DE172F3E2E001558E1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FA709DD172F3E2E001558E1 /* Default@2x.png */; };
+		3FA709E0172F3E2E001558E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FA709DF172F3E2E001558E1 /* Default-568h@2x.png */; };
+		3FA709E3172F3E2E001558E1 /* SlingShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA709E2172F3E2E001558E1 /* SlingShotViewController.m */; };
+		3FA709E6172F3E2E001558E1 /* SlingShotViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA709E4172F3E2E001558E1 /* SlingShotViewController_iPhone.xib */; };
+		3FA709E9172F3E2E001558E1 /* SlingShotViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA709E7172F3E2E001558E1 /* SlingShotViewController_iPad.xib */; };
+		3FA709F0172F3E85001558E1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA709EF172F3E85001558E1 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FA709C5172F3E2E001558E1 /* SlingShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlingShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA709C9172F3E2E001558E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FA709CB172F3E2E001558E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FA709CD172F3E2E001558E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FA709D1172F3E2E001558E1 /* SlingShot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlingShot-Info.plist"; sourceTree = "<group>"; };
+		3FA709D3172F3E2E001558E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FA709D5172F3E2E001558E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FA709D7172F3E2E001558E1 /* SlingShot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlingShot-Prefix.pch"; sourceTree = "<group>"; };
+		3FA709D8172F3E2E001558E1 /* SlingShotAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlingShotAppDelegate.h; sourceTree = "<group>"; };
+		3FA709D9172F3E2E001558E1 /* SlingShotAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlingShotAppDelegate.m; sourceTree = "<group>"; };
+		3FA709DB172F3E2E001558E1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3FA709DD172F3E2E001558E1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3FA709DF172F3E2E001558E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3FA709E1172F3E2E001558E1 /* SlingShotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlingShotViewController.h; sourceTree = "<group>"; };
+		3FA709E2172F3E2E001558E1 /* SlingShotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlingShotViewController.m; sourceTree = "<group>"; };
+		3FA709E5172F3E2E001558E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SlingShotViewController_iPhone.xib; sourceTree = "<group>"; };
+		3FA709E8172F3E2E001558E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SlingShotViewController_iPad.xib; sourceTree = "<group>"; };
+		3FA709EF172F3E85001558E1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FA709C2172F3E2E001558E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA709F0172F3E85001558E1 /* QuartzCore.framework in Frameworks */,
+				3FA709CA172F3E2E001558E1 /* UIKit.framework in Frameworks */,
+				3FA709CC172F3E2E001558E1 /* Foundation.framework in Frameworks */,
+				3FA709CE172F3E2E001558E1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FA709BA172F3E2E001558E1 = {
+			isa = PBXGroup;
+			children = (
+				3FA709EF172F3E85001558E1 /* QuartzCore.framework */,
+				3FA709CF172F3E2E001558E1 /* SlingShot */,
+				3FA709C8172F3E2E001558E1 /* Frameworks */,
+				3FA709C6172F3E2E001558E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FA709C6172F3E2E001558E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FA709C5172F3E2E001558E1 /* SlingShot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FA709C8172F3E2E001558E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FA709C9172F3E2E001558E1 /* UIKit.framework */,
+				3FA709CB172F3E2E001558E1 /* Foundation.framework */,
+				3FA709CD172F3E2E001558E1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FA709CF172F3E2E001558E1 /* SlingShot */ = {
+			isa = PBXGroup;
+			children = (
+				3FA709D8172F3E2E001558E1 /* SlingShotAppDelegate.h */,
+				3FA709D9172F3E2E001558E1 /* SlingShotAppDelegate.m */,
+				3FA709E1172F3E2E001558E1 /* SlingShotViewController.h */,
+				3FA709E2172F3E2E001558E1 /* SlingShotViewController.m */,
+				3FA709E4172F3E2E001558E1 /* SlingShotViewController_iPhone.xib */,
+				3FA709E7172F3E2E001558E1 /* SlingShotViewController_iPad.xib */,
+				3FA709D0172F3E2E001558E1 /* Supporting Files */,
+			);
+			path = SlingShot;
+			sourceTree = "<group>";
+		};
+		3FA709D0172F3E2E001558E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FA709D1172F3E2E001558E1 /* SlingShot-Info.plist */,
+				3FA709D2172F3E2E001558E1 /* InfoPlist.strings */,
+				3FA709D5172F3E2E001558E1 /* main.m */,
+				3FA709D7172F3E2E001558E1 /* SlingShot-Prefix.pch */,
+				3FA709DB172F3E2E001558E1 /* Default.png */,
+				3FA709DD172F3E2E001558E1 /* Default@2x.png */,
+				3FA709DF172F3E2E001558E1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FA709C4172F3E2E001558E1 /* SlingShot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA709EC172F3E2E001558E1 /* Build configuration list for PBXNativeTarget "SlingShot" */;
+			buildPhases = (
+				3FA709C1172F3E2E001558E1 /* Sources */,
+				3FA709C2172F3E2E001558E1 /* Frameworks */,
+				3FA709C3172F3E2E001558E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlingShot;
+			productName = SlingShot;
+			productReference = 3FA709C5172F3E2E001558E1 /* SlingShot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FA709BC172F3E2E001558E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SlingShot;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = student;
+			};
+			buildConfigurationList = 3FA709BF172F3E2E001558E1 /* Build configuration list for PBXProject "SlingShot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FA709BA172F3E2E001558E1;
+			productRefGroup = 3FA709C6172F3E2E001558E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FA709C4172F3E2E001558E1 /* SlingShot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FA709C3172F3E2E001558E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA709D4172F3E2E001558E1 /* InfoPlist.strings in Resources */,
+				3FA709DC172F3E2E001558E1 /* Default.png in Resources */,
+				3FA709DE172F3E2E001558E1 /* Default@2x.png in Resources */,
+				3FA709E0172F3E2E001558E1 /* Default-568h@2x.png in Resources */,
+				3FA709E6172F3E2E001558E1 /* SlingShotViewController_iPhone.xib in Resources */,
+				3FA709E9172F3E2E001558E1 /* SlingShotViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FA709C1172F3E2E001558E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA709D6172F3E2E001558E1 /* main.m in Sources */,
+				3FA709DA172F3E2E001558E1 /* SlingShotAppDelegate.m in Sources */,
+				3FA709E3172F3E2E001558E1 /* SlingShotViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FA709D2172F3E2E001558E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA709D3172F3E2E001558E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FA709E4172F3E2E001558E1 /* SlingShotViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA709E5172F3E2E001558E1 /* en */,
+			);
+			name = SlingShotViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		3FA709E7172F3E2E001558E1 /* SlingShotViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA709E8172F3E2E001558E1 /* en */,
+			);
+			name = SlingShotViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FA709EA172F3E2E001558E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FA709EB172F3E2E001558E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FA709ED172F3E2E001558E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlingShot/SlingShot-Prefix.pch";
+				INFOPLIST_FILE = "SlingShot/SlingShot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FA709EE172F3E2E001558E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlingShot/SlingShot-Prefix.pch";
+				INFOPLIST_FILE = "SlingShot/SlingShot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FA709BF172F3E2E001558E1 /* Build configuration list for PBXProject "SlingShot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA709EA172F3E2E001558E1 /* Debug */,
+				3FA709EB172F3E2E001558E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA709EC172F3E2E001558E1 /* Build configuration list for PBXNativeTarget "SlingShot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA709ED172F3E2E001558E1 /* Debug */,
+				3FA709EE172F3E2E001558E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FA709BC172F3E2E001558E1 /* Project object */;
+}
