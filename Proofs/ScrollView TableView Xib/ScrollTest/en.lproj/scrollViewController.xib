@@ -306,8 +306,8 @@
 								<float key="scoringTypeFloat">29</float>
 								<int key="contentType">3</int>
 							</object>
-							<reference ref="695267887"/>
 							<reference ref="327821582"/>
+							<reference ref="695267887"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
